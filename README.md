@@ -63,6 +63,29 @@ For more information on using the Angular CLI, including detailed command refere
 
 ng serve to start
 
+
+--------------------------------------------------------------------------------------------------------------------------------
+De la parte del backend y mongoDB esta
+
+- neuva coleccion
+- la relacion con userID que se refiere a USER
+- 3 tipos de datos diferentes (objectId DEL USERID, NUMBER Y STRING)
+- NUEVO ENDPOINT, NUEVO MODELO, LAS OPERACIONES CRUD
+
+DE ANGULAR ESTA
+
+- NUEVO COMPONENTE
+- NUEVO SERVICIO
+- USO DE LAS LLAMDAS AL NUEVO ENDPOINT
+
+PROBLEMAS Y COSAS QUE NO ESTAN
+
+nose porque, al hacer un post de confianza en el nuevo endpoint desde angular no funciona pero desde postman si que funciona. Osea que las interacciones a la BBDD funcionan solo que la post desde angular no. 
+
+Listado de paginas y buscador no he hecho nada
+
+y lo del nuevo modelo, al final confianza es algo nuevo pero no hemos usado modelos en nuestro proyecto
+
 npm install after git clone
 
 API: https://github.com/victorarjona10/EA_PROYECTO_QUICKFIND npm install to install dependencies & npx ts-node src/app.ts to run the API
