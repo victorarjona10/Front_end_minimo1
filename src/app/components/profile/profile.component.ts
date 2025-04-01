@@ -59,6 +59,12 @@ export class ProfileComponent implements OnInit{
     
     }
 
+    goToConfianza() {
+      const userIdDeVerdad = this.route.snapshot.paramMap.get('id');
+      this.router.navigate(['/confianza', userIdDeVerdad]);
+    }
+  
+
     ViewProduct(item: any) {
       this.router.navigate(['/product', item._id]);
     }

@@ -1,0 +1,34 @@
+<p>confianza works!</p>
+<div class="confianza-container">
+    <h1>Confianza del Usuario</h1>
+    <p><strong>ID del Usuario:</strong> {{ userId }}</p>
+  
+    <div *ngIf="confianza !== null">
+      <p><strong>Confianza Actual:</strong> {{ confianza }}</p>
+      <p *ngIf="fecha"><strong>Última Actualización:</strong> {{ fecha }}</p>
+      <input
+        type="number"
+        [(ngModel)]="nuevaConfianza"
+        placeholder="Actualizar confianza (0-10)"
+      />
+      <button (click)="actualizarConfianza()">Actualizar Confianza</button>
+      <button (click)="eliminarConfianza()">Eliminar Confianza</button>
+    </div>
+  
+    <div *ngIf="confianza === null">
+      <p><strong>Confianza no encontrada para este usuario.</strong></p>
+      <input
+        type="number"
+        [(ngModel)]="nuevaConfianza"
+        placeholder="Crear confianza (0-10)"
+      />
+      <!--    
+      <button (click)="postearConfianza()">Guardar Confianza</button>
+    -->  
+    <button (click)="postearConfianza()">Guardar Confianza</button>
+
+    </div>
+  
+    <p class="mensaje" *ngIf="mensaje">{{ mensaje }}</p>
+  </div>
+  

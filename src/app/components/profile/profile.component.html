@@ -9,13 +9,16 @@
       <li><strong>Phone:</strong> {{user.phone}}</li>
       <li><strong>Wallet:</strong> {{user.wallet}} </li>
     </ul>
-
+    <button (click)="goToConfianza()">Ver Confianza</button>   <!-- boton para ir al componente que te dirija a la confianza -->  
     <h2>User Orders</h2>
     <ul class="profile-orders">
       <li *ngFor="let order of orders">
         <app-order [order]="order"></app-order>
       </li>
     </ul>
-    <button (click)="Return()">Exit</button>
+    
+   
   </div>
+  <button (click)="Return()">Exit</button>
+  
 </div>
